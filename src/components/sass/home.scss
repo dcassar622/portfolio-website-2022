@@ -1,0 +1,81 @@
+@import "./mixins.scss";
+
+/* ---------- HOME PAGE ---------- */
+
+#intro-container {
+  @include display-flex(column, space-evenly, flex-start);
+  position: absolute;
+  max-width: 100%;
+  height: 15rem;
+  margin-top: 10%;
+  margin-left: 8rem;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+
+#pointer-container {
+  position: relative;
+  @include display-flex(column, space-evenly, center);
+  width: 60%;
+  padding: 2rem;
+  top: calc(100vh / 2 + 12rem);
+  margin-left: 30%;
+  height: 15rem;
+  @include text-frame(black);
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  a:hover {
+    color: teal;
+  }
+}
+
+#tagline {
+  font-size: 1.2rem;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* ---------- tablets / small laptops ---------- */
+
+@media all and (max-width: 1023px) {
+  #intro-container {
+    margin-top: 7%;
+    margin-left: 6rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  #pointer-container {
+    margin-left: 20%;
+  }
+}
+
+/* ---------- large phones ---------- */
+
+@media all and (max-width: 639px) {
+  #intro-container {
+    margin-top: 20%;
+    margin-left: 5rem;
+    padding-right: 3rem;
+  }
+
+  #pointer-container {
+    top: calc(100vh / 2 + 8rem);
+    width: 70%;
+    margin-left: 15%;
+    padding: 1rem;
+    height: 20rem;
+    text-align: center;
+
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}

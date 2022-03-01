@@ -1,0 +1,44 @@
+/* ---------- SIDEBAR ---------- */
+
+.sidebar {
+  position: fixed;
+  width: 100vh;
+  height: 4rem;
+  padding-top: 1rem;
+  background: var(--sidebar-background);
+  text-align: center;
+}
+
+.sidebar:hover {
+  cursor: pointer;
+  background-color: teal;
+}
+
+.left-sidebar {
+  transform-origin: left top;
+  transform: rotate(-90deg);
+  left: 0;
+  top: 100%;
+}
+
+.right-sidebar {
+  transform-origin: right top;
+  transform: rotate(90deg);
+  right: 0;
+  top: 100%;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* ---------- large phones ---------- */
+
+@media all and (max-width: 639px) {
+  .sidebar {
+    height: 2rem;
+    padding-top: 0;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
