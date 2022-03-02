@@ -2,14 +2,9 @@ const portfolioProjects = [
   {
     title: "Count Of Monte Crypto",
     subtitle: " A Cryptocurrency portfolio, market data and news application",
-    description: `Count Of Monte Crypto lets users
-              create a personal cryptocurrency assets portfolio, keeping track of any purhcases made, and viweing the price
-              charts for each asset. It also displays some general market data
-              such as daily market cap and volume. The application is based on
-              (and uses data from) the CryptoCompare API. Built using
-              Vanilla Javascript, HTML, CSS
-              Materialize CSS for the form and
-              chart popups. Also using Chart.JS and AutoComplete.JS libraries`,
+    description: `Personalised cryptocurrency assets portfolio, with live portfolio price updates and charts, as well as general market data
+              such as daily market cap and volume. All data is obtained from the CryptoCompare API. Built using
+              Vanilla Javascript, CSS and Materialise. Also uses Chart.JS and AutoComplete.JS libraries`,
     linkApp: "https://count-of-monte-crypto.firebaseapp.com/",
     linkCode: "https://github.com/dcassar622/count-of-monte-crypto-JS.git",
     id: "count-of-monte-crypto-card"
@@ -40,15 +35,26 @@ const portfolioProjects = [
     linkCode: "https://github.com/dcassar622/song-science.git",
     id: "song-science-card"
   },
+
+  {
+    title: "Screen Butler",
+    subtitle: " TV show search and progress tracker application",
+    description: `Screen Butler is a A TV series search, wishlist and progress tracking tool 
+                  built using React JS, and styles using a combination of vanilla CSS and Materialise
+`,
+    linkApp: `Video Demonstration : `,
+    linkCode: "https://github.com/dcassar622/screen-butler.git",
+    id: "song-science-card"
+  },
+  
   {
     title: "Portfolio Website",
     subtitle: " Getting meta (this website you're currently on!)",
-    description: `Song Science uses Spotify's
-              Developer API to display various audio analysis and metadata
-              features for any song that can be found in Spotify. Built using React JS, HTML & CSS/SASS
+    description: `My very own portfolio website,
+                  built using React JS and styled in SASS
 `,
     linkApp: "",
-    linkCode: "https://github.com/dcassar622/song-science.git",
+    linkCode: "https://github.com/dcassar622/portfolio-website-2022.git",
     id: "portfolio-website-card"
   }
 ];

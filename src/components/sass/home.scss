@@ -7,21 +7,25 @@
   position: absolute;
   max-width: 100%;
   height: 15rem;
-  margin-top: 10%;
+  margin-top: 4%;
   margin-left: 8rem;
-  justify-content: space-evenly;
   font-size: 3rem;
+
+  h6 {
+    font-weight: normal;
+  }
 }
 
 #pointer-container {
   position: relative;
   @include display-flex(column, space-evenly, center);
-  width: 60%;
-  padding: 2rem;
-  top: calc(100vh / 2 + 12rem);
-  margin-left: 30%;
+  width: 35%;
+  top: calc(100vh / 2 + 5rem);
+  margin-left: 50%;
+  margin-bottom: 10rem;
   height: 15rem;
   @include text-frame(black);
+  text-align: center;
 
   h4 {
     font-size: 1.3rem;

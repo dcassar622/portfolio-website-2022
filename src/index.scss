@@ -13,6 +13,8 @@
   background-image: url("./images/background-main-small.gif");
   background-size: cover;
   background-position: center center;
+  overflow: auto;
+  min-height: auto;
 }
 
 body {
@@ -71,7 +73,6 @@ code {
 .page-container {
   position: relative;
   min-height: 100vh;
-  overflow: visible;
 }
 
 a {

@@ -14,9 +14,8 @@ const Intro = () => {
       </h6>
 
       <h6>
-        <span className="selected">Other</span> Stuff
+        <span className="selected">Software</span> Engineer
       </h6>
-      <br></br>
       <br></br>
       <p id="tagline">
         ... and I LOVE{" "}

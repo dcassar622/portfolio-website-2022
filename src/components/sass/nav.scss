@@ -13,7 +13,7 @@
 }
 
 #nav-right {
-  width: 45%;
+  width: 30%;
   @include display-flex(row, space-between, center);
 
   #contact-link {
@@ -47,6 +47,11 @@
 #social-container {
   img {
     height: 70px;
+  }
+
+  img:hover {
+    transition: ease-in 0.1s;
+    transform: scale(1.1);
   }
 }
 

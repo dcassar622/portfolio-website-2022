@@ -17,7 +17,7 @@ const About = () => {
         <Knowledge />
         <Learning />
         <Relearning />
-        <Disclaimer />
+        {/* <Disclaimer /> */}
       </div>
 
       <Sidebar orientation="left" page="home" />

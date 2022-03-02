@@ -73,8 +73,10 @@
 /* ---------- back ---------- */
 
 .card-back {
-  @include display-flex(column, space-evenly, center);
+  @include display-flex(column, center, center);
   transform: rotateY(180deg);
+  font-size: 0.95rem;
+  text-align: center;
 }
 
 .card-description {
