@@ -24,6 +24,7 @@ const Intro = () => {
           &#x007B;
           <span className="selected"> building </span> stuff &#x007D;{" "}
         </Link>{" "}
+        <br></br>
         with
         <span className="selected"> code</span>!! &#x2764;
       </p>

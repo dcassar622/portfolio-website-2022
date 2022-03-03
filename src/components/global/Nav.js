@@ -1,8 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import Social from "./Social";
 import "../sass/nav.scss";
 import logo from "../../../src/images/logo.gif";
+import github_logo from "../../images/github-logo.png";
+import linkedin_logo from "../../images/linkedin-logo.png";
 
 const Nav = () => {
   return (
@@ -13,11 +13,21 @@ const Nav = () => {
             <img src={logo} id="logo" alt="logo" />
           </div>
         </a>
-        <div id="nav-right">
-          <NavLink id="contact-link" to="/contact">
-            Get In Touch
-          </NavLink>
-          <Social />
+        <div id='social-container'>
+          <a
+            href="https://github.com/dcassar622"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={github_logo} alt="Github Logo"></img>{" "}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniel-cassar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin_logo} alt="Linkedin Logo"></img>
+          </a>
         </div>
       </div>
     </div>

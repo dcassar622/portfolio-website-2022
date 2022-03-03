@@ -6,7 +6,7 @@ import "../sass/home.scss";
 
 const Home = () => {
   return (
-    <div className="page-container">
+    <div className="page-container" id="homepage-container">
       <Intro />
       <Pointer />
       <Sidebar orientation="left" page="portfolio" />

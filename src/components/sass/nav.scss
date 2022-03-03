@@ -12,29 +12,15 @@
   @include display-flex(row, space-between, center);
 }
 
-#nav-right {
-  width: 30%;
-  @include display-flex(row, space-between, center);
 
-  #contact-link {
-    font-size: 1.3rem;
-    text-decoration: underline;
-  }
+/* ---------- logo (NAV LEFT) ---------- */
 
-  .active {
-    color: teal;
-  }
-}
-
-/* ---------- logo ---------- */
-
-#logo-container {
+#logos-container {
   z-index: 1;
 }
 
 #logo {
   width: 120px;
-
   z-index: 1;
 }
 
@@ -42,11 +28,14 @@
   cursor: pointer;
 }
 
-/* ---------- social icons ---------- */
+/* ---------- social icons (NAV RIGHT) ---------- */
 
 #social-container {
+  width: 15%;
+  @include display-flex(row, space-between, center);
+
   img {
-    height: 70px;
+    height: 50px;
   }
 
   img:hover {
@@ -59,51 +48,51 @@
 
 /* ---------- tablets / small laptops ---------- */
 
-@media all and (max-width: 1023px) {
-  #nav-right {
-    width: 60%;
+@media only screen and (min-width:769px) and (max-width:1024px) {
+  #social-container {
+    margin-right: 5%;
+    width: 15%;
+
+    img {
+      height: 40px;
+    }
   }
 }
 
-/* ---------- large phones ---------- */
 
-@media all and (max-width: 639px) {
+/** tablets & larger phones (landscape) **/
+
+@media only screen and (min-width:481px) and (max-width:768px) {
   #nav-bar {
     width: 70%;
   }
 
-  #nav-right {
-    @include display-flex(column, center, center);
-    padding-top: 20px;
-  }
-
   #social-container {
-    padding-top: 20px;
+    
+    width: 20%;
+    @include display-flex(row, space-between, center);
 
     img {
-      height: 50px;
-    }
+      height: 30px;
+    } 
   }
 }
 
 /* ---------- small phones ---------- */
 
-@media all and (max-width: 414px) {
+@media only screen and (min-width:320px) and (max-width:480px) {
   #nav-bar {
     width: 80%;
     @include display-flex(column, center, center);
   }
 
-  #nav-right {
-    @include display-flex(column, center, center);
-    padding-top: 20px;
-  }
-
   #social-container {
-    padding-top: 20px;
+    
+    width: 30%;
+    @include display-flex(row, space-between, center);
 
     img {
-      height: 50px;
-    }
+      height: 30px;
+    } 
   }
 }

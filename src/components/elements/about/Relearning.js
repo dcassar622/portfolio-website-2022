@@ -14,7 +14,7 @@ const Relearning = () => {
         <br />
         <ul>
           <li>
-            Java <sup>**</sup>
+            Java
           </li>
         </ul>
       </section>

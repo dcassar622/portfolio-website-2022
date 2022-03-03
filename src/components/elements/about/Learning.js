@@ -5,7 +5,7 @@ const Learning = () => {
   return (
     <div id="learning-container" className="slide-in">
       <section id="to-learn-section">
-        <h1>Just Started Dabbling/Learning =></h1>
+        <h1>Currently Learning =></h1>
         <br />
 
         <ul>

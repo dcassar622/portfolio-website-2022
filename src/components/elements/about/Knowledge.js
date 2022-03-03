@@ -6,7 +6,7 @@ const Knowledge = () => {
     <div id="knowledge-container">
       <section id="knowledge-section">
         <h1>
-          What I Know / Use / Do <sup>*</sup> =>
+          What I Know / Use / Do =>
         </h1>
         <br />
 

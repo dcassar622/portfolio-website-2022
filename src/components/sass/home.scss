@@ -44,9 +44,9 @@
 
 /* ---------- tablets / small laptops ---------- */
 
-@media all and (max-width: 1023px) {
+@media only screen and (min-width:769px) and (max-width:1024px) {
   #intro-container {
-    margin-top: 7%;
+    margin-top: 2%;
     margin-left: 6rem;
     padding-right: 2rem;
     font-size: 2rem;
@@ -57,29 +57,72 @@
   }
 
   #pointer-container {
-    margin-left: 20%;
-  }
-}
-
-/* ---------- large phones ---------- */
-
-@media all and (max-width: 639px) {
-  #intro-container {
-    margin-top: 20%;
-    margin-left: 5rem;
-    padding-right: 3rem;
-  }
-
-  #pointer-container {
-    top: calc(100vh / 2 + 8rem);
-    width: 70%;
-    margin-left: 15%;
-    padding: 1rem;
-    height: 20rem;
-    text-align: center;
+    width: 50%;
+    right: 5rem;
+    height: 15rem;
 
     h4 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 }
+
+/** tablets & larger phones (landscape) **/
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+  #intro-container {
+    margin-top: 2%;
+    margin-left: 6rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  #pointer-container {
+    width: 50%;
+    right: 5rem;
+    height: 15rem;
+
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+}
+/* ---------- small phones ---------- */
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    #intro-container {
+      @include display-flex(column, space-evenly, center);
+      margin-top: 10%;
+      margin-left: 5rem;
+      padding-right: 2rem;
+      font-size: 2rem;
+      height: 20%;
+
+      h3 {
+        font-size: 1.4rem; 
+      }
+
+      h6 {
+        font-size: 1.2rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  
+    #pointer-container {
+      width: 50%;
+      right: 5rem;
+      height: 15rem;
+  
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  }

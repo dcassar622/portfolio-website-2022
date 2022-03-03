@@ -35,7 +35,7 @@ const Bio = () => {
           giving me attitude. And to be honest, I wouldn't have it any
           other way...
         </p>
-        <div id="image-section">
+        {/*<div id="image-section">
           <p>
             PS : --- I'd like to think that my code looks way better than that
             wallpaper! ---{" "}
@@ -44,7 +44,7 @@ const Bio = () => {
             </span>
           </p>
           <img src={me} alt="profile" />
-        </div>
+        </div>*/}
       </section>
     </div>
   );
